@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unplug Media</title>
+    <link rel="stylesheet" href="indexstyle.css">
+    <script src="indexjs.js"></script>
+    <script src="https://kit.fontawesome.com/f5c28b68e7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="mainbody">
+    <section id="index-main">
+        <div class="index-nav" id="indexnav">
+            <button class="login-btn" id="loginbtn" onclick="loginpage()">Login</button>
+        </div>
+        <div class="index-menu" id="indexmenu">
+            <img src="images/logo.png" alt="" class="logo">
+            <p>Your one stop shop for movies and tv shows brought to you by</p>
+            <div class="list-category" id="listcategory">
+                <img src="images/category1.png" alt="" class="category" id="content1">
+                <img src="images/category2.png" alt="" class="category" id="content2">
+                <img src="images/category3.png" alt="" class="category" id="content3">
+                <img src="images/category4.png" alt="" class="category" id="content4">
+                <img src="images/category5.png" alt="" class="category" id="content5">
+            </div>
+            <button class="learnmore-btn" id="learnmorebtn" onclick="window.location.href='#about-index'">Learn More</button>
+        </div>
+    </section>
+    <section id="about-index">
+        <div class="mainabout-index">
+            <div class="mainaboutleft-index">
+                <h1 class="sectiontitle">About Us</h1>
+                <p class="sectiondesc">Unplug Media is a streaming service catered to your need. Every categories available in the palm of your hand in the highest quality possible with no compression so you can enjoy your favourite movies or tv shows with as much detail as possible. Unplug media works with a lot of popular studios to brings you their best products from actions to drama, from western animation to the best of anime. It'll be your one stop shop for everything you need.</p>
+                <button class="learnmore-btn" onclick="listofshows()">List of Shows</button>
+            </div>
+            <div class="mainaboutright-index">
+                <div id="carousel-container">
+                    <div class="carousel-content" id="carouselcontent">
+                        <img src="images/show1.png" alt="" class="shows">
+                        <img src="images/show2.png" alt="" class="shows">
+                        <img src="images/show3.png" alt="" class="shows">
+                        <img src="images/show4.png" alt="" class="shows">
+                        <img src="images/show5.png" alt="" class="shows">
+                        <img src="images/show6.png" alt="" class="shows">
+                        <img src="images/show1.png" alt="" class="shows">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="index-feature">
+        <div class="indexfeature-btn">
+            <div class="feature-btns" id="button1" onclick="changefeatures(1)">
+                    <i class="fas fa-tv fa-3x"></i>
+                    <span>Apps</span>
+            </div>
+            <div class="feature-btns" id="button2" onclick="changefeatures(2)">
+                    <i class="fas fa-tags fa-3x"></i>
+                    <span>Pricing</span>
+            </div>
+            <div class="feature-btns" id="button3" onclick="changefeatures(3)">
+                    <i class="fas fa-phone-square fa-3x"></i>
+                    <span>Contact Us</span>
+            </div>
+        </div>
+        <div id="feature-content">
+              <div id="feature1">
+                  <img src="images/displays.png" alt="">
+                  <p>Unplug media is available on all your favourite devices so you can enjoy your movies and tv shows anywhere you want to. It's available through your web browser in <b>PC</b>, it's own app in your playstore and app store for your <b>android phone</b>, <b>iphone</b>, and <b>ipad</b>, and on your <b>smart tv</b> app store. They've been optimized to output the best resolution available from the media to your display of choice to generate the best quality with no compromise!</p>
+              </div>
+              <div id="feature2">
+                  <div class="pricingtable" id="pricing1" onclick="changeprice(1)">
+                        <h1 class="pricetitle">BASIC</h1>
+                      <div id="pricecon1" class="pricingcontent">
+                        <div style="display: flex; flex-direction: row;"><p style="font-size: 50px;">$2.99</p><p style="margin-top: 20px;">/month</p></div>
+                        <p style="font-size: 12px;">$35.99 payment in a year</p>
+                        <br>
+                        <ul class="listoffeatures">
+                            <li><p>Access to all movies and tv shows available</p></li>
+                            <li><p>Content resolution up to FHD (1080p)</p></li>
+                            <li><p>Up to 5 movies or 20 episodes of shows offline download capability</p></li>
+                            <li><p>Up to 2 screens of simultaneous watching</p></li>
+                        </ul>
+                      </div>
+                  </div>
+                  <div class="pricingtable" id="pricing2" onclick="changeprice(2)" >
+                    <h1 class="pricetitle">DELUXE</h1>
+                    <div id="pricecon2" class="pricingcontent">
+                        <div style="display: flex; flex-direction: row;"><p style="font-size: 50px;">$4.99</p><p style="margin-top: 20px;">/month</p></div>
+                        <p style="font-size: 12px;">$59.99 payment in a year</p>
+                        <br>
+                        <ul class="listoffeatures">
+                            <li><p>Access to all movies and tv shows available</p></li>
+                            <li><p>Content resolution up to FHD (1080p)</p></li>
+                            <li><p>Unlimited offline download capability</p></li>
+                            <li><p>Up to 4 screens of simultaneous watching</p></li>
+                            <li><p>No ads</p></li>
+                        </ul>
+                    </div>
+                  </div>
+                  <div class="pricingtable" id="pricing3" onclick="changeprice(3)">
+                    <h1 class="pricetitle">PREMIUM</h1>
+                    <div id="pricecon3" class="pricingcontent">
+                        <div style="display: flex; flex-direction: row;"><p style="font-size: 50px;">$7.99</p><p style="margin-top: 20px;">/month</p></div>
+                        <p style="font-size: 12px;">$95.99 payment in a year</p>
+                        <br>
+                        <ul class="listoffeatures">
+                            <li><p>Access to all movies and tv shows available</p></li>
+                            <li><p>Content resolution up to UHD (2160p)</p></li>
+                            <li><p>Unlimited offline download capability</p></li>
+                            <li><p>Unlimited screens of simultaneous watching</p></li>
+                            <li><p>No ads</p></li>
+                        </ul>
+                    </div>
+                  </div>
+              </div>
+              <div id="feature3">
+                  <h1>Follow us on these social media : </h1>
+                  <p>Instagram : @UnplugMedia</p>
+                  <p>Twitter : @UnplugMedia</p>
+                  <p>Email : unplug@media.com</p>
+              </div>  
+        </div>
+    </section>
+    <section id="indexloginpage" onclick="popoutlogin()"></section>
+    <div id="logindiv">
+        <h1>Login</h1>
+        <form class="loginform" action="">
+            <input type="text" class="logininputfield" placeholder="username / email" required>
+            <input type="password" class="logininputfield" placeholder="password" required>
+            <button class="loginpopbtn" onclick="loggedin()">Login</button>
+        </form>
+    </div>
+    <div id="showsdiv">
+        <div class="listofcategories">
+            <p id="cat1" onclick="changeshows(1)">Marvel</p>
+            <p id="cat2" onclick="changeshows(2)">Disney</p>
+            <p id="cat3" onclick="changeshows(3)">WB</p>
+            <p id="cat4" onclick="changeshows(4)">DC</p>
+            <p id="cat5" onclick="changeshows(5)">Animated</p>
+            <p id="cat6" onclick="changeshows(6)">Other</p>
+            <p id="cat7" onclick="changeshows(7)">TV Shows</p>
+            <p id="cat8" onclick="changeshows(8)">Anime</p>
+            <p id="cat9" onclick="popoutshows()">&cross;</p>
+        </div>
+        <div class="galleryofshows">
+            <div id="shows-1" class="showscontainer">
+                <img src="images/Marvel/marvel2.png" alt="" class="showimg marvellist">
+                <img src="images/Marvel/marvel3.png" alt="" class="showimg marvellist">
+                <img src="images/Marvel/marvel1.png" alt="" class="showimg marvellist">
+                <img src="images/Marvel/marvel4.png" alt="" class="showimg marvellist">
+                <img src="images/Marvel/marvel5.png" alt="" class="showimg marvellist">
+                <img src="images/Marvel/marvel6.png" alt="" class="showimg marvellist">
+                <img src="images/Marvel/marvel7.png" alt="" class="showimg marvellist">
+                <img src="images/Marvel/marvel8.png" alt="" class="showimg marvellist">
+                <img src="images/Marvel/marvel9.png" alt="" class="showimg marvellist">
+                <img src="images/Marvel/marvel10.png" alt="" class="showimg marvellist">
+                <img src="images/Marvel/marvel11.png" alt="" class="showimg marvellist">
+                <img src="images/Marvel/marvel12.png" alt="" class="showimg marvellist">
+                <img src="images/Marvel/marvel13.png" alt="" class="showimg marvellist">
+                <img src="images/Marvel/marvel14.png" alt="" class="showimg marvellist">
+                <img src="images/Marvel/marvel15.png" alt="" class="showimg marvellist">
+                <img src="images/Marvel/marvel16.png" alt="" class="showimg marvellist">
+                <img src="images/Marvel/marvel17.png" alt="" class="showimg marvellist">
+                <img src="images/Marvel/marvel18.png" alt="" class="showimg marvellist">
+                <img src="images/Marvel/marvel19.png" alt="" class="showimg marvellist">
+                <img src="images/Marvel/marvel20.png" alt="" class="showimg marvellist">
+                <img src="images/Marvel/marvel21.png" alt="" class="showimg marvellist">
+                <img src="images/Marvel/marvel22.png" alt="" class="showimg marvellist">
+                <img src="images/Marvel/marvel23.png" alt="" class="showimg marvellist">
+                <img src="images/Marvel/marvel24.png" alt="" class="showimg marvellist">
+                <img src="images/Marvel/marvel25.png" alt="" class="showimg marvellist">
+                <img src="images/Marvel/marvel26.png" alt="" class="showimg marvellist">
+                <img src="images/Marvel/marvel27.png" alt="" class="showimg marvellist">
+                <img src="images/Marvel/marvel28.png" alt="" class="showimg marvellist">
+                <img src="images/Marvel/marvel29.png" alt="" class="showimg marvellist">
+                <img src="images/Marvel/marvel30.png" alt="" class="showimg marvellist">
+            </div>
+            <div id="shows-2" class="showscontainer">
+                <img src="images/Disney/Disney1.png" alt="" class="showimg disneylist">
+                <img src="images/Disney/Disney2.png" alt="" class="showimg disneylist">
+                <img src="images/Disney/Disney3.png" alt="" class="showimg disneylist">
+                <img src="images/Disney/Disney4.png" alt="" class="showimg disneylist">
+                <img src="images/Disney/Disney5.png" alt="" class="showimg disneylist">
+                <img src="images/Disney/Disney6.png" alt="" class="showimg disneylist">
+                <img src="images/Disney/Disney7.png" alt="" class="showimg disneylist">
+                <img src="images/Disney/Disney8.png" alt="" class="showimg disneylist">
+                <img src="images/Disney/Disney9.png" alt="" class="showimg disneylist">
+                <img src="images/Disney/Disney10.png" alt="" class="showimg disneylist">
+                <img src="images/Disney/Disney11.png" alt="" class="showimg disneylist">
+                <img src="images/Disney/Disney12.png" alt="" class="showimg disneylist">
+                <img src="images/Disney/Disney13.png" alt="" class="showimg disneylist">
+                <img src="images/Disney/Disney14.png" alt="" class="showimg disneylist">
+                <img src="images/Disney/Disney15.png" alt="" class="showimg disneylist">
+                <img src="images/Disney/Disney16.png" alt="" class="showimg disneylist">
+                <img src="images/Disney/Disney17.png" alt="" class="showimg disneylist">
+                <img src="images/Disney/Disney18.png" alt="" class="showimg disneylist">
+                <img src="images/Disney/Disney19.png" alt="" class="showimg disneylist">
+                <img src="images/Disney/Disney20.png" alt="" class="showimg disneylist">
+                <img src="images/Disney/Disney21.png" alt="" class="showimg disneylist">
+                <img src="images/Disney/Disney22.png" alt="" class="showimg disneylist">
+                <img src="images/Disney/Disney23.png" alt="" class="showimg disneylist">
+                <img src="images/Disney/Disney24.png" alt="" class="showimg disneylist">
+                <img src="images/Disney/Disney25.png" alt="" class="showimg disneylist">
+                <img src="images/Disney/Disney26.png" alt="" class="showimg disneylist">
+                <img src="images/Disney/Disney27.png" alt="" class="showimg disneylist">
+                <img src="images/Disney/Disney28.png" alt="" class="showimg disneylist">
+                <img src="images/Disney/Disney29.png" alt="" class="showimg disneylist">
+                <img src="images/Disney/Disney30.png" alt="" class="showimg disneylist">
+            </div>
+            <div id="shows-3" class="showscontainer">
+                <img src="images/WB/WB1.png" alt="" class="showimg wblist">
+                <img src="images/WB/WB2.png" alt="" class="showimg wblist">
+                <img src="images/WB/WB3.png" alt="" class="showimg wblist">
+                <img src="images/WB/WB4.png" alt="" class="showimg wblist">
+                <img src="images/WB/WB5.png" alt="" class="showimg wblist">
+                <img src="images/WB/WB6.png" alt="" class="showimg wblist">
+                <img src="images/WB/WB7.png" alt="" class="showimg wblist">
+                <img src="images/WB/WB8.png" alt="" class="showimg wblist">
+                <img src="images/WB/WB9.png" alt="" class="showimg wblist">
+                <img src="images/WB/WB10.png" alt="" class="showimg wblist">
+                <img src="images/WB/WB11.png" alt="" class="showimg wblist">
+                <img src="images/WB/WB12.png" alt="" class="showimg wblist">
+                <img src="images/WB/WB13.png" alt="" class="showimg wblist">
+            </div>
+            <div id="shows-4" class="showscontainer">
+                <img src="images/DC/DC1.png" alt="" class="showimg dclist">
+                <img src="images/DC/DC2.png" alt="" class="showimg dclist">
+                <img src="images/DC/DC3.png" alt="" class="showimg dclist">
+                <img src="images/DC/DC4.png" alt="" class="showimg dclist">
+                <img src="images/DC/DC5.png" alt="" class="showimg dclist">
+                <img src="images/DC/DC6.png" alt="" class="showimg dclist">
+                <img src="images/DC/DC7.png" alt="" class="showimg dclist">
+                <img src="images/DC/DC8.png" alt="" class="showimg dclist">
+                <img src="images/DC/DC9.png" alt="" class="showimg dclist">
+                <img src="images/DC/DC10.png" alt="" class="showimg dclist">
+                <img src="images/DC/DC11.png" alt="" class="showimg dclist">
+            </div>
+            <div id="shows-5" class="showscontainer">
+                <img src="images/Animated/Animation1.png" alt="" class="showimg animationlist">
+                <img src="images/Animated/Animation2.png" alt="" class="showimg animationlist">
+                <img src="images/Animated/Animation3.png" alt="" class="showimg animationlist">
+                <img src="images/Animated/Animation4.png" alt="" class="showimg animationlist">
+                <img src="images/Animated/Animation5.png" alt="" class="showimg animationlist">
+                <img src="images/Animated/Animation6.png" alt="" class="showimg animationlist">
+                <img src="images/Animated/Animation7.png" alt="" class="showimg animationlist">
+                <img src="images/Animated/Animation8.png" alt="" class="showimg animationlist">
+                <img src="images/Animated/Animation9.png" alt="" class="showimg animationlist">
+                <img src="images/Animated/Animation10.png" alt="" class="showimg animationlist">
+                <img src="images/Animated/Animation11.png" alt="" class="showimg animationlist">
+                <img src="images/Animated/Animation12.png" alt="" class="showimg animationlist">
+                <img src="images/Animated/Animation13.png" alt="" class="showimg animationlist">
+                <img src="images/Animated/Animation14.png" alt="" class="showimg animationlist">
+                <img src="images/Animated/Animation15.png" alt="" class="showimg animationlist">
+                <img src="images/Animated/Animation16.png" alt="" class="showimg animationlist">
+            </div>
+            <div id="shows-6" class="showscontainer">
+                <img src="images/Other/Other1.png" alt="" class="showimg otherlist">
+                <img src="images/Other/Other2.png" alt="" class="showimg otherlist">
+                <img src="images/Other/Other3.png" alt="" class="showimg otherlist">
+                <img src="images/Other/Other4.png" alt="" class="showimg otherlist">
+                <img src="images/Other/Other5.png" alt="" class="showimg otherlist">
+                <img src="images/Other/Other6.png" alt="" class="showimg otherlist">
+                <img src="images/Other/Other7.png" alt="" class="showimg otherlist">
+                <img src="images/Other/Other8.png" alt="" class="showimg otherlist">
+                <img src="images/Other/Other9.png" alt="" class="showimg otherlist">
+                <img src="images/Other/Other10.png" alt="" class="showimg otherlist">
+                <img src="images/Other/Other11.png" alt="" class="showimg otherlist">
+                <img src="images/Other/Other12.png" alt="" class="showimg otherlist">
+                <img src="images/Other/Other13.png" alt="" class="showimg otherlist">
+                <img src="images/Other/Other14.png" alt="" class="showimg otherlist">
+                <img src="images/Other/Other15.png" alt="" class="showimg otherlist">
+                <img src="images/Other/Other16.png" alt="" class="showimg otherlist">
+                <img src="images/Other/Other17.png" alt="" class="showimg otherlist">
+                <img src="images/Other/Other18.png" alt="" class="showimg otherlist">
+                <img src="images/Other/Other19.png" alt="" class="showimg otherlist">
+                <img src="images/Other/Other20.png" alt="" class="showimg otherlist">
+                <img src="images/Other/Other21.png" alt="" class="showimg otherlist">
+                <img src="images/Other/Other22.png" alt="" class="showimg otherlist">
+            </div>
+            <div id="shows-7" class="showscontainer">
+                <img src="images/TV/tv1.png" alt="" class="showimg tvlist">
+                <img src="images/TV/tv2.png" alt="" class="showimg tvlist">
+                <img src="images/TV/tv3.png" alt="" class="showimg tvlist">
+                <img src="images/TV/tv4.png" alt="" class="showimg tvlist">
+                <img src="images/TV/tv5.png" alt="" class="showimg tvlist">
+                <img src="images/TV/tv6.jpg" alt="" class="showimg tvlist">
+                <img src="images/TV/tv7.png" alt="" class="showimg tvlist">
+                <img src="images/TV/tv8.png" alt="" class="showimg tvlist">
+            </div>
+            <div id="shows-8" class="showscontainer">
+                <img src="images/Ani/ani1.png" alt="" class="showimg animelist">
+                <img src="images/Ani/ani2.png" alt="" class="showimg animelist">
+                <img src="images/Ani/ani3.png" alt="" class="showimg animelist">
+                <img src="images/Ani/ani4.png" alt="" class="showimg animelist">
+                <img src="images/Ani/ani5.png" alt="" class="showimg animelist">
+                <img src="images/Ani/ani6.png" alt="" class="showimg animelist">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<footer>
+    <span>&copy;UNPLUGMEDIA 2021 - THIS WEB IS PURELY FOR EDUCATIONAL PURPOSES</span>
+</footer>
+</html>
